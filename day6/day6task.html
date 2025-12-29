@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Changer</title>
+    <link rel="stylesheet" href="day6task.css">
+</head>
+<body>
+
+    <button onclick="changeColor()">Change Background Color</button>
+
+    <script>
+        let colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+        let index = 0;
+
+        function changeColor() {
+            document.body.style.backgroundColor = colors[index];
+            index++;
+
+            if (index === colors.length) {
+                index = 0;
+            }
+        }
+    </script>
+
+</body>
+</html>

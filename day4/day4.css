@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background-color: #ffffff;
+}
+
+.hero-img img{
+    width: 450px;
+    height: auto;
+}
+
+.hero-text{
+    margin-left: 60px;
+    max-width: 500px;
+}
+
+.hero-text h4{
+    letter-spacing: 2px;
+    color: gray;
+}
+
+.hero-text h1{
+    color: #e64a19;
+    font-size: 36px;
+}
+
+.hero-text p{
+    color: #555;
+    line-height: 1.6;
+}
+
+.hero-text button{
+    background-color: #e64a19;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.services{
+    display: flex;
+    width: 100%;
+}
+
+.card{
+    width: 33.33%;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.card h2{
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card button{
+    margin-top: 20px;
+    padding: 8px 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card1{
+    background-color: #e53935;
+}
+
+.card2{
+    background-color: #fb8c00;
+}
+
+.card3{
+    background-color: #ffb74d;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="day5task.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Hello, I'm <span>Hari</span></h1>
+        <p>Sophomore B.E student at FX College</p>
+        <a href="#contact" class="contact-btn">Contact Us</a>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <ul>
+            <li>Sophomore B.E student interested in web development</li>
+            <li>Learning HTML and CSS</li>
+            <li>Aiming to become a full-stack developer</li>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">C</div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>One Piece Website</h3>
+                <p>Overview of One Piece characters</p>
+            </div>
+            <div class="project-card">
+                <h3>Timetable Page</h3>
+                <p>Simple timetable using HTML & CSS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <h2 class="contact-title">Contact Us</h2>
+
+        <div class="contact-box">
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <input type="text" placeholder="Name" id="name">
+                <input type="email" placeholder="Email" id="email">
+                <textarea placeholder="Message" id="msg"></textarea>
+                <button type="submit" onclick="contactForm()">Submit</button>
+                <script>
+    function contactForm(){
+        let Name = String(document.getElementById("name").value);
+        let Email = String(document.getElementById("email").value);
+        let Message = String(document.getElementById("msg").value);
+        if(Name==""|| Email==""||Message==""){
+            alert("Please fill the box");
+        }
+        else{
+            alert("Message sent sucessfully")
+        }
+        }
+        </script>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>📞 +91 9629698818</p>
+                <p>✉️ hariharan1992006@gmail.com</p>
+                <p>📍 Tirunelveli</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Hari | Student Portfolio</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    padding: 70px 20px;
+}
+
+.hero span {
+    color: #00ffd5;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #00ffd5;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #00ffd5;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    font-size: 14px;
+}
+
+.contact-section {
+    padding-bottom: 80px;
+}
+
+.contact-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(to right, #000080, #ffffff);
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.contact-form {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.contact-form button {
+    background: black;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+}
+.contact-info {
+    flex: 1;
+    text-align: left;
+    padding: 5%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+     <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+            width: 250px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESULT</h1>
+
+    <label>Enter Marks :</label>
+    <input type="text" id="t1"><br><br>
+
+     <h1>Total :</h1>
+
+    <h1 id="res"></h1><br>
+    <input type="button" value="Result" onclick="Res()">
+    
+    <script>
+        function Res(){
+        let d = document.getElementById("t1").value;
+        if (d == "") {
+            document.getElementById("res").innerHTML = "INVALID INPUT";
+            return 0;
+        }
+        else{
+            let a=d.split(",");
+            let s=0;
+            a.forEach(myfun);
+            function myfun(val){
+                va=Number(val)
+                s=s+va;
+        }
+            document.getElementById("res").innerHTML = s;
+        }
+        }
+        
+    </script>
+</body>
+</html>

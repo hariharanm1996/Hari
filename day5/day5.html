@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>RESULT</h1>
+
+    <label>Enter your Name:</label>
+    <input type="text" id="t1"><br><br>
+
+    <label>Enter Register Number:</label>
+    <input type="number" id="t2"><br><br>
+
+    <label>Enter Mark 1:</label>
+    <input type="number" id="t3"><br><br>
+
+    <label>Enter Mark 2:</label>
+    <input type="number" id="t4"><br><br>
+
+    <label>Enter Mark 3:</label>
+    <input type="number" id="t5"><br><br>
+
+    <h1 id="res"></h1><br>
+
+    <input type="button" value="Result" onclick="Res()">
+
+    <script>
+        function Res() {
+            let d = document.getElementById("t3").value;
+            let e = document.getElementById("t4").value;
+            let f = document.getElementById("t5").value;
+
+            if (d == "" || e == "" || f == "") {
+                document.getElementById("res").innerHTML = "INVALID INPUT";
+                return 0;
+            }
+            let h=Number(d)
+            let i=Number(e)
+            let j=Number(f)
+            let g = (h + i + j) / 3;
+
+            if (g >= 40) {
+                document.getElementById("res").innerHTML = "PASS";
+            } else {
+                document.getElementById("res").innerHTML = "FAIL";
+            }
+        }
+    </script>
+</body>
+</html>
